@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 336268736}
   - component: {fileID: 336268735}
   - component: {fileID: 336268734}
+  - component: {fileID: 336268737}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -346,6 +347,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &336268737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 336268733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c57ff99934213d247aac965e3332c824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &350068541
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,8 +568,10 @@ GameObject:
   - component: {fileID: 422684334}
   - component: {fileID: 422684333}
   - component: {fileID: 422684332}
+  - component: {fileID: 422684336}
+  - component: {fileID: 422684335}
   m_Layer: 5
-  m_Name: Button
+  m_Name: UpButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -655,6 +669,37 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 422684330}
+--- !u!114 &422684335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422684330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &422684336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422684330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450f62ce61bb18848baa5032096b4727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetKeyCode: 0
 --- !u!1 &526565591
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,8 +711,10 @@ GameObject:
   - component: {fileID: 526565595}
   - component: {fileID: 526565594}
   - component: {fileID: 526565593}
+  - component: {fileID: 526565597}
+  - component: {fileID: 526565596}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: DownButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -765,6 +812,31 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 526565591}
+--- !u!114 &526565596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526565591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450f62ce61bb18848baa5032096b4727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetKeyCode: 1
+--- !u!114 &526565597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526565591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
+  delegates: []
 --- !u!1001 &724517176
 Prefab:
   m_ObjectHideFlags: 0
@@ -860,8 +932,10 @@ GameObject:
   - component: {fileID: 942762472}
   - component: {fileID: 942762471}
   - component: {fileID: 942762470}
+  - component: {fileID: 942762474}
+  - component: {fileID: 942762473}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: LeftButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -959,6 +1033,31 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 942762468}
+--- !u!114 &942762473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942762468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450f62ce61bb18848baa5032096b4727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetKeyCode: 3
+--- !u!114 &942762474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942762468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
+  delegates: []
 --- !u!1 &1212553243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,8 +1292,10 @@ GameObject:
   - component: {fileID: 1967320278}
   - component: {fileID: 1967320277}
   - component: {fileID: 1967320276}
+  - component: {fileID: 1967320280}
+  - component: {fileID: 1967320279}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: RightButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1292,6 +1393,31 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1967320274}
+--- !u!114 &1967320279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967320274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450f62ce61bb18848baa5032096b4727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetKeyCode: 2
+--- !u!114 &1967320280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967320274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
+  delegates: []
 --- !u!1 &2048894018
 GameObject:
   m_ObjectHideFlags: 0

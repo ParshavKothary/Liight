@@ -35,7 +35,9 @@ public class ShootLaser : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.D)) gameObject.transform.Translate(gameObject.transform.right * 0.05f);
-        else if (Input.GetKey(KeyCode.A)) gameObject.transform.Translate(gameObject.transform.right * -0.05f);
+        float move = 0f;
+        if (Input.GetKey(KeyCode.D) || MyInput.GetKey(MyKeyCode.Right)) move = 1f;
+        else if (Input.GetKey(KeyCode.A) || MyInput.GetKey(MyKeyCode.Left)) move = -1f;
+        gameObject.transform.Translate(gameObject.transform.right * 0.05f * move);
     }
 }
